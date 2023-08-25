@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: sap
+    schema: sap_adw
+    description: Fonte de dados de Pessoas do SAP Adeventure Works
+    tables:
+      - name: person
+        columns:
+          - name: businessentityid
+            tests:
+              - unique
+              - not_null
+                  
+     
