@@ -2,14 +2,19 @@ with
     source_person as (
         select 
             cast(businessentityid as int)  					
-            , persontype											
-            , firstname						
-            , middlename						
-            , lastname											
-            , emailpromotion																
-            , rowguid						
-            , modifieddate			
-        from {{ source('sap', 'person') }}
+            , --persontype
+            , --namestyle
+            , --title
+            , firstname
+            , middlename
+            , lastname
+            , --suffix
+            , emailpromotion
+            , --additionalcontactinfo
+            ,-- demographics
+            , rowguid
+            , modifieddate		
+        from {{ source('stg_sap__person', 'person') }}
     )
 
 select *

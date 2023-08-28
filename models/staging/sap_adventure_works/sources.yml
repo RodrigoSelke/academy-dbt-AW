@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: sap
+  - name: stg_sap__person
     schema: sap_adw
     description: Fonte de dados de Pessoas do SAP Adeventure Works
     tables:

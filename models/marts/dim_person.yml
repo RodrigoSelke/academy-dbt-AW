@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: dim_person
+    description: Dimensão pessoas da Adventure World 
+    columns:
+      - name: businessentityid
+        description: chave primária da tabela person
+        tests:
+          - unique
+          - not_null
+
+      - name: firstname
+        description: primeiro nome  
+
+      - name: middlename
+        description: nome do meio
+
+      - name: lastname
+        description: último nome
+
+      - name: emailpromotion
+        description: abc
+
+      - name: rowguid
+        description: abc
+
+      - name: modifieddate	
+        description: abc
