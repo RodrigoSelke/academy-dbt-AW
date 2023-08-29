@@ -13,17 +13,17 @@ models:
       - name: firstname
         description: primeiro nome  
 
-      - name: middlename
-        description: nome do meio
-
       - name: lastname
         description: último nome
+        
+      - name: full_name
+        description: nome completo
 
       - name: emailpromotion
-        description: abc
+        description: deixei na tabela para futura exploração
 
       - name: rowguid
-        description: abc
+        description: deixei na tabela para futura exploração
 
       - name: modifieddate	
-        description: abc
+        description: deixei na tabela para futura exploração

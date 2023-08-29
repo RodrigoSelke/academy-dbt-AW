@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: stg_sap__person
+  - name: sap_adventure_works
     schema: sap_adw
     description: Fonte de dados de Pessoas do SAP Adeventure Works
     tables:
@@ -11,5 +11,17 @@ sources:
             tests:
               - unique
               - not_null
-                  
+      - name: personcreditcard
+        columns:
+          - name: businessentityid
+            tests:
+              - unique
+              - not_null
+
+      - name: creditcard
+        columns:
+          - name: creditcardid
+            tests:
+              - unique
+              - not_null        
      
