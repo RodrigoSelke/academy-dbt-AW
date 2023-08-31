@@ -23,5 +23,25 @@ sources:
           - name: creditcardid
             tests:
               - unique
-              - not_null        
-     
+              - not_null 
+
+      - name: businessentityaddress
+        columns:
+          - name: businessentityid
+            tests:
+              - unique
+              - not_null  
+      
+      - name: addresstype
+        columns:
+          - name: addresstypeid
+            tests:
+              - unique
+              - not_null  
+
+      - name: address
+        columns:
+          - name: addressid
+            tests:
+              - unique
+              - not_null  

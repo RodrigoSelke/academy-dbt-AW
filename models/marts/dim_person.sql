@@ -16,15 +16,18 @@ with
 
     ,join_person_creditcard as (
         select 
-            sap_person.businessentityid	
+            sap_personcreditcard.businessentityid	
             , sap_personcreditcard.creditcardid
             , sap_person.full_name
+            , sap_person.emailpromotion
             , sap_creditcard.cardtype
             , sap_person.rowguid
             , sap_person.modifieddate  
         from sap_personcreditcard
         left join sap_person on sap_person.businessentityid = sap_personcreditcard.businessentityid
         left join sap_creditcard on sap_personcreditcard.creditcardid = sap_creditcard.creditcardid
+        
+        
     )
 
 select *
