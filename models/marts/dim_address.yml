@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: dim_address
-    description: Dimensão pessoas da Adventure World 
+    description: Dimensão endereço da Adventure World 
     columns:
       - name: addressid
         description: chave primária da tabela adress
@@ -10,20 +10,4 @@ models:
           - unique
           - not_null
 
-      - name: firstname
-        description: primeiro nome  
-
-      - name: lastname
-        description: último nome
-        
-      - name: full_name
-        description: nome completo
-
-      - name: emailpromotion
-        description: deixei na tabela para futura exploração
-
-      - name: rowguid
-        description: deixei na tabela para futura exploração
-
-      - name: modifieddate	
-        description: deixei na tabela para futura exploração
+      

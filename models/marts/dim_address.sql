@@ -14,6 +14,11 @@ with
         from {{ ref('stg_sap_address') }}
     )
 
+    ,sap_person as (
+        select * 
+        from {{ ref('stg_sap__person') }}
+    )
+
     ,join_address as (
         select 
             sap_businessentityaddress.businessentityid
@@ -24,10 +29,12 @@ with
             , sap_address.city
             , sap_address.stateprovinceid
             , sap_address.postalcode
+            , sap_person.full_name
+            , sap_person.emailpromotion 
         from sap_businessentityaddress
         left join sap_addresstype on sap_addresstype.addresstypeid = sap_businessentityaddress.addresstypeid
         left join sap_address on sap_address.addressid = sap_businessentityaddress.addressid
-                
+        left join sap_person on sap_person.businessentityid = sap_businessentityaddress.businessentityid       
     )
 
 select *
