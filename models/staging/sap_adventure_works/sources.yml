@@ -45,3 +45,10 @@ sources:
             tests:
               - unique
               - not_null  
+
+      - name: businessentitycontact
+        columns:
+          - name: businessentityid
+            tests:
+              - unique
+              - not_null  

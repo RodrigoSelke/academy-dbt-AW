@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: dim_person_creditcard
+  - name: dim_person
     description: Dimensão pessoas da Adventure World 
     columns:
       - name: businessentityid
