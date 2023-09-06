@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_production
+    description: Dimensão produtos da Adventure World 
+    columns:
+      - name: productid
+        description: chave primária da tabela person
+        tests:
+          - unique
+          - not_null

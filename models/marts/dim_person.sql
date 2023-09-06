@@ -60,7 +60,7 @@ with
         from sap_personcreditcard
         left join sap_person on sap_person.businessentityid = sap_personcreditcard.businessentityid
         left join sap_creditcard on sap_personcreditcard.creditcardid = sap_creditcard.creditcardid
-        right join sap_businessentityaddress on sap_businessentityaddress.businessentityid = sap_personcreditcard.businessentityid    
+        join sap_businessentityaddress on sap_businessentityaddress.businessentityid = sap_personcreditcard.businessentityid    
         left join sap_address on sap_address.addressid = sap_businessentityaddress.addressid
         left join sap_addresstype on  sap_addresstype.addresstypeid =  sap_businessentityaddress.addresstypeid
         left join sap_stateprovince on sap_stateprovince.stateprovinceid = sap_address.stateprovinceid
